@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -25,7 +26,7 @@
       <div class="container nav_container">
         <a href="#" class="nav_logo">EXCLUSIVE</a>
         <ul class="nav_list">
-          <li class="nav_item"><a href="#" class="nav_link">Home</a></li>
+          <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
           <li class="nav_item"><a href="#" class="nav_link">About</a></li>
           <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
           <li class="nav_item"><a href="#" class="nav_link">Sign up</a></li>
@@ -39,9 +40,44 @@
             <img src="./image/search.png" alt="" class="nav_search" />
           </form>
           <img src="./image/heart.png" alt="" class="nav_heart" />
-          <img src="./image/cart.png" alt="" class="nav_cart" />
+          <a href="/cart.html">
+            <img src="./image/cart.png" alt="" class="nav_cart" />
+          </a>
         </div>
+        <span class="hamburger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </span>
       </div>
+    </nav>
+    <nav class="mobile_nav mobile_nav_hide">
+      <ul class="mobile_nav_list">
+        <li class="mobile_nav_item">
+          <a href="/" class="mobile_nav_link">Home</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">About</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Contact</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="#" class="mobile_nav_link">Sign Up</a>
+        </li>
+        <li class="mobile_nav_item">
+          <a href="/cart.html" class="mobile_nav_link">Cart</a>
+        </li>
+      </ul>
     </nav>
     <header class="header">
       <div class="container header_container">
@@ -170,6 +206,14 @@
                     </div>
                     <p class="card_rating_numbers">(88)</p>
                   </div>
+                  <button
+                    class="add_to_cart"
+                    data-id="1"
+                    data-title="HAVIT HV-G92 Gamepad"
+                    data-image="./image/items/item-1.png"
+                    data-price="120">
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -211,7 +255,7 @@
                 </div>
                 <div class="card_body">
                   <h3 class="card_title">AK-900 Wired Keyboard</h3>
-                  <p class="card_price">$120</p>
+                  <p class="card_price">$80</p>
                   <div class="card_ratings">
                     <div class="card_stars">
                       <svg
@@ -271,6 +315,14 @@
                     </div>
                     <p class="card_rating_numbers">(88)</p>
                   </div>
+                  <button
+                    class="add_to_cart"
+                    data-id="2"
+                    data-title="AK-900 Wired Keyboard"
+                    data-image="./image/items/item-2.png"
+                    data-price="80">
+                    Add to Cart
+                  </button>
                 </div>
               </div>
             </div>
@@ -2449,6 +2501,52 @@
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="container footer_container">
+        <div class="footer_item">
+          <a href="#" class="footer_logo">Exclusive</a>
+          <div class="footer_p">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Exercitationem fuga harum voluptate?
+          </div>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Stockholm, Sweden</li>
+            <li class="li footer_list_item">email@gmail.com</li>
+            <li class="li footer_list_item">+46 123 456 78</li>
+            <li class="li footer_list_item">+46 72 345 67</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Account</li>
+            <li class="li footer_list_item">Login / Register</li>
+            <li class="li footer_list_item">Cart</li>
+            <li class="li footer_list_item">Shop</li>
+          </ul>
+        </div>
+        <div class="footer_item">
+          <h3 class="footer_item_titl">Support</h3>
+          <ul class="footer_list">
+            <li class="li footer_list_item">Privacy policy</li>
+            <li class="li footer_list_item">Terms of use</li>
+            <li class="li footer_list_item">FAQ's</li>
+            <li class="li footer_list_item">Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <div class="container footer_bottom_container">
+          <p class="footer_copy">
+            Copyright Exclusive 2023. All right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
