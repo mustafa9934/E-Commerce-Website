@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Cart - Exclusive E-Commerce Website</title>
+    <title>Home - Exclusive E-Commerce Website</title>
   </head>
   <body>
     <div class="top_nav">
@@ -70,7 +74,7 @@
           <a href="#" class="mobile_nav_link">Contact</a>
         </li>
         <li class="mobile_nav_item">
-          <a href="./sign-up.html" class="mobile_nav_link">Sign Up</a>
+          <a href="/sign-up.html" class="mobile_nav_link">Sign Up</a>
         </li>
         <li class="mobile_nav_item">
           <a href="/cart.html" class="mobile_nav_link">Cart</a>
@@ -79,16 +83,37 @@
     </nav>
 
     <section class="section">
-      <div class="container">
-        <div class="cart">
-          <div class="cart_header">
-            <p class="cart_header_id">Product ID</p>
-            <p class="cart_header_title">Product Title</p>
-            <p class="cart_header_image">Product Image</p>
-            <p class="cart_header_price">Price</p>
-            <p class="cart_header_delete">Delete</p>
-          </div>
-          <div class="cart-items"></div>
+      <div class="auth_container">
+        <div class="auth_img">
+          <img src="./image/auth-image.png" alt="" class="auth_image" />
+        </div>
+        <div class="auth_content">
+          <form action="" class="auth_form">
+            <h2 class="form_title">Login to your account</h2>
+            <p class="auth_p">Enter your details below</p>
+            <div class="form_group">
+              <input type="email" placeholder="Email" class="form_input" />
+            </div>
+            <div class="form_group form_pass">
+              <input
+                type="password"
+                placeholder="Password"
+                class="form_input" />
+            </div>
+            <div class="form_group">
+              <button class="form_btn">
+                <a href="#" class="form_link">Login</a>
+              </button>
+            </div>
+            <div class="form_group">
+              <span
+                >Don't have an account?
+                <a href="./sign-up.html" class="form_auth_link"
+                  >Reegister</a
+                ></span
+              >
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -138,6 +163,9 @@
         </div>
       </div>
     </footer>
-    <script src="./js/cart.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
